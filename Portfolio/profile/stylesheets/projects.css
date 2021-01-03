@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html, body {
+	background: url("../images/nl-background.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: 100% 100%;
+  	font-size: 20px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	overflow-x: scroll;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+}
+
+.navigation {
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.33);
+	position: fixed;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 80px;
+}
+
+.navigation a {
+	color: #FFFF;
+	text-align: center;
+	padding: 5px 10px 5px 10px;
+	margin: 20px 20px 40px 10px;
+	text-decoration: none;
+	font-size: 1.05rem;
+	transition: .3s;
+	float: left;
+	border: 2px solid transparent;
+}
+
+.navigation a:first-child {
+	margin-left: 40px; 
+	margin-right: 50px;
+	border: 2px solid #EBEBEB;
+	font-family: 'Poiret One', cursive;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.navigation a:first-child:hover {
+	background: #EBEBEB;
+	color: #000000;
+}
+
+.navigation a:nth-child(2), .navigation a:nth-child(3) {
+	font-family: 'Lato', sans-serif;
+}
+
+.navigation a:nth-child(2):hover hr {
+	background: #FFFF
+}	
+
+.navigation a:nth-child(3):hover hr {
+	background: #FFFF
+}	
+
+.navigation hr {
+	height: .10rem;
+	width: 80px;
+	margin: 5px 0 0 0;
+	background: transparent;
+	border: none;
+	transition: .3s;
+}
+
+.project-container {
+	margin-top: 120px;
+	width: 120%;
+	height: 50%;
+}
+
+.project-container h1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 100;
+	font-size: 1.8rem;
+	margin: 0 0 0 50px;
+	color: #EBEBEB;
+}
+
+.project-container hr {
+	margin-left: 50px;
+	width: 30%;
+}
+
+
+.project a {
+	text-decoration: none;
+}
+
+.scroll-container {
+	width: 100%;
+	height: 360px;
+	text-align: center;
+	
+}
+.scroll-container .project {
+	float: left;
+	margin: 0 0 0 30px;
+	width: 23%;
+	height: 330px;	
+}
+
+.scroll-container .project h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+	font-size: 1.2rem;
+	color: #DEDEDE;
+}
+
+.scroll-container .project img{
+	border-radius: 3px;
+	box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.33);
+	width: 90%;
+	height: 200px;
+	transition: 0.5s
+}
+
+.scroll-container .project p {
+	text-decoration: underline;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+	color: #4affe1;
+	visibility: hidden;
+
+
+}
+.scroll-container .project:hover img{
+	transform: scale(1.15);
+}
+
+.scroll-container .project:hover h3{ 
+	color: #FFFF; 
+}
+
+.scroll-container .project:hover p{
+	visibility: visible;
+}
+
+.scroll-container .project p:hover{
+
+}
+.scroll-container .project h3 span {
+  background-image: linear-gradient(transparent calc(95% - 5px), #42ffe0 5px);
+  background-size: 0;
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: 0.5s ease;
+}
+.scroll-container .project:hover h3 span {
+  background-size: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+  	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ 	background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  	background: #555; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  	background: #888; 
+}
