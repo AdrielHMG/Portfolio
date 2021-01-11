@@ -20,7 +20,7 @@ html, body {
 
 .profile-container {
 	overflow-y: scroll;
-	background: #f7f7f7;
+	background: #f7f7f7d7;
 	color: #000000;
 	font-size: 0.8rem;
 	position: fixed;
@@ -82,6 +82,20 @@ main {
 	background: rgba(0,0,0,0.8);
 }
 
+.transition {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  transition: 0.5s ease-out;
+  opacity: 1;
+}
+
+.transition.is-active {
+  transform: translateX(-100%);
+}
+
 .about {
 	position: fixed;
 	left: 50%;
@@ -90,7 +104,7 @@ main {
 }
 
 .about h3 {
-	color: #F0F0F0;
+	color: #f0f0f0e7;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 100;
 	font-size: 2.2rem;
@@ -99,12 +113,13 @@ main {
 
 .about p {
 	color: #F0F0F0;
-	font-family: 'Montserrat', sans-serif;
-	margin: 0;
+	font-family: 'Poiret One', cursive;
+	font-size: 1rem;
+	text-align: justify;
+	margin-bottom: 20px;
 }
 
 .about button {
-	margin-top: 20px;
 	background: rgba(0,0,0,0);
 	color: #ffff;
 	padding: 4px;
@@ -113,7 +128,7 @@ main {
 	font-family: 'Raleway', sans-serif;
 	font-size: 0.8rem;
 	transition: 0.3s;
-	width: 90px;
+	width: 110px;
 }
 
 .about button:hover {

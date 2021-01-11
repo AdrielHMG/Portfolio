@@ -10,7 +10,7 @@
 }
 
 .navigation a {
-	color: white;
+	color: rgba(255, 255, 255, 0.89);
 	text-align: center;
 	padding: 5px 10px 5px 10px;
 	margin: 20px 20px 40px 10px;
@@ -71,15 +71,13 @@
   animation: slideUp 2.5s ease forwards; 
 }
 
-.about-div {
-  animation: slideLeft 1s ease forwards; 
-}
-
-.project-container {
-  animation: slideRight 1s ease forwards;
+.project-container, .about-div {
+  animation-iteration-count: 1;
+  animation: slideRight 1s normal forwards;
 }
 
 .project-container div:first-child {
+  animation-iteration-count: 1;
   animation: slideRight 1.5s ease forwards;
 }
 
@@ -102,7 +100,6 @@
 .profile-container.active {
   animation: slideRight 0.8s ease forwards;
 }
-
 
 @keyframes slideDown {
   0% {
